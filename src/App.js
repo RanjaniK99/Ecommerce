@@ -3,17 +3,22 @@ import Navbar from "./components/Navbar";
 import Home from "./components/Home";
 import { Routes, Route } from "react-router-dom";
 import Products from "./components/Products";
+import Footer from "./components/Footer";
+import Contact from "./components/Contact";
+import About from "./components/About";
 
 function App() {
   return (
-    <div className="App">
+    <>
       <Navbar />
-      <Home />
       <Routes>
-        <Route path="/" elemtent={<Home />} />
-        <Route path="/products" elemtent={<Products />} />
+        <Route path="/" element={<Home />} />
+        <Route path="/products" element={<Products />} />
+        <Route path="/contact" element={<Contact />} />
+        <Route path="/about" element={<About />} />
       </Routes>
-    </div>
+      <Footer />
+    </>
   );
 }
 

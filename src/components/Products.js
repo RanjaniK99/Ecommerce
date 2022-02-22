@@ -15,7 +15,6 @@ const Products = () => {
         setData(await response.clone().json());
         setFilter(await response.json());
         setLoading(false);
-        console.log(filter);
       }
       return () => {
         componentMounted = false;
@@ -99,9 +98,7 @@ const Products = () => {
                       {product.title.substring(0, 12)}...
                     </h5>
                     <p className="card-text lead fw-bold">${product.price}</p>
-                    <a href="#" class="btn btn-outline-dark">
-                      Buy Now
-                    </a>
+                    <button class="btn btn-outline-dark">Buy Now</button>
                   </div>
                 </div>
               </div>
