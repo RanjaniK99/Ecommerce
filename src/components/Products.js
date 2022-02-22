@@ -67,7 +67,7 @@ const Products = () => {
             className="btn me-2"
             onClick={() => filterProduct("jewelery")}
           >
-            Jewelery
+            Jewels
           </button>
           <button
             className="btn me-2"
