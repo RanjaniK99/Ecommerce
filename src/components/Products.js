@@ -16,12 +16,9 @@ const Products = () => {
         setFilter(await response.json());
         setLoading(false);
       }
-      return () => {
-        componentMounted = false;
-      };
     };
     getProducts();
-  }, []);
+  }, [componentMounted]);
 
   const Loading = () => {
     return (
