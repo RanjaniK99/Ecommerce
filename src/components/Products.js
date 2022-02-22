@@ -47,33 +47,30 @@ const Products = () => {
   const ShowProducts = () => {
     return (
       <>
-        <div className="buttons d-flex justify-content-center mb-5 pb-5">
-          <button
-            className="btn btn-outline-dark me-2"
-            onClick={() => setFilter(data)}
-          >
+        <div className="buttons d-flex justify-content-center mb-5 clickme">
+          <button className="btn me-2" onClick={() => setFilter(data)}>
             All
           </button>
           <button
-            className="btn btn-outline-dark me-2"
+            className="btn me-2"
             onClick={() => filterProduct("men's clothing")}
           >
-            Men's Clothing
+            Men
           </button>
           <button
-            className="btn btn-outline-dark me-2 "
+            className="btn me-2 "
             onClick={() => filterProduct("women's clothing")}
           >
-            Women's Clothing
+            Women
           </button>
           <button
-            className="btn btn-outline-dark me-2"
+            className="btn me-2"
             onClick={() => filterProduct("jewelery")}
           >
             Jewelery
           </button>
           <button
-            className="btn btn-outline-dark me-2"
+            className="btn me-2"
             onClick={() => filterProduct("electronics")}
           >
             Electronic
@@ -82,20 +79,24 @@ const Products = () => {
         {filter.map((product) => {
           return (
             <>
-              <div className="col-md-3 mb-4">
-                <div className="card h-100 text-center p-4" key={product.id}>
+              <div className="col-md-3 mb-4 mypro">
+                <div
+                  className="card h-90 text-center p-4 border border-dark"
+                  key={product.id}
+                >
                   <img
                     src={product.image}
                     class="card-img-top"
                     alt={product.title}
-                    height="250px"
+                    height="150px"
+                    width="150px"
                   />
                   <div className="card-body">
                     <h5 className="card-title mb-0">
                       {product.title.substring(0, 12)}...
                     </h5>
                     <p className="card-text lead fw-bold">${product.price}</p>
-                    <button class="btn btn-outline-dark">Buy Now</button>
+                    <button class="btn">Buy Now</button>
                   </div>
                 </div>
               </div>
@@ -107,9 +108,9 @@ const Products = () => {
   };
   return (
     <div>
-      <div className="container my-5 py-5">
+      <div className="container my-2 py-2">
         <div className="row">
-          <div className="col-12 mb-5">
+          <div className="col-12 mb-3">
             <h1 className="display-6 fw-bolder text-center">
               Latest Product Designs
             </h1>

@@ -1,13 +1,86 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+/* NavBar */
+nav {
+  background-color: rgb(19, 18, 18);
+}
+.navbar-brand {
+  font-weight: 600;
+  color: white;
+}
+.navbar-brand:hover {
+  color: crimson !important;
+  transition: all 0.3s ease;
+}
+.nav-link {
+  color: white !important;
+  transition: all 0.3s ease;
+}
+.nav-link:hover {
+  color: crimson !important;
+}
+button span .navbar-toggler-icon {
+  color: white !important;
+}
+div .login {
+  background-color: white;
+  border: 1px solid crimson;
+  color: crimson;
+}
+div .login:hover {
+  border: 1px solid crimson;
+  background-color: crimson;
+  color: white;
+}
+/* HOME */
+/* div img .bgimg {
+  height: 450px !important;
+} */
+
+div .card-title,
+.card-text {
+  color: black !important;
+}
+
+div .clickme button {
+  border: 1px solid crimson;
+  background-color: crimson;
+  color: white;
+}
+div .clickme button:hover {
+  background-color: white;
+  border: 1px solid crimson;
+  color: crimson;
+}
+
+/* products */
+.mypro button {
+  border: 1px solid crimson;
+  background-color: crimson;
+  color: white;
+}
+.mypro button:hover {
+  background-color: white;
+  border: 1px solid crimson;
+  color: crimson;
+}
+
+/* footer */
+div .footer {
+  background-color: black;
+  color: white;
+}
+div .footer:hover {
+  color: crimson;
 }
